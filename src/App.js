@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
+function countN() {
+  let num = Number.parseInt(document.getElementById('num').value);
+  let sum = num * (num + 1) / 2;
+  alert('Сумма первых N натуральных чисел: ' + sum);
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <input type="number" id="num" name="num" />
+      <button onClick={countN}>Считать</button>
     </div>
   );
 }
