@@ -11,9 +11,8 @@ function countN() {
 
 function App() {
   return (
-    <div>
-      <input type="number" id="num" name="num" />
-      <TextField id="standard-basic" label="Enter number" />
+    <div>      
+      <TextField id="num" label="Enter number" />
       <Button onClick={countN} variant="contained" color="primary">Считать</Button>      
     </div>
   );
